@@ -1,0 +1,14 @@
+# GreetA PHP - optional clean URLs (requires mod_rewrite)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Default to index.php
+DirectoryIndex index.php

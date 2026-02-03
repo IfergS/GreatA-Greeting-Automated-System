@@ -1,0 +1,56 @@
+name: greet_a_flutter
+description: GreetA Faculty Attendance System - Flutter Edition
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Navigation
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^2.0.9
+  
+  # Camera & Image Processing
+  camera: ^0.10.5+9
+  image: ^4.1.7
+  image_picker: ^1.0.7
+  
+  # Face Recognition & ML
+  google_mlkit_face_detection: ^0.10.0
+  
+  # Voice & Speech
+  flutter_tts: ^4.0.2
+  speech_to_text: ^6.6.0
+  
+  # Storage & Data
+  path_provider: ^2.1.1
+  sqflite: ^2.3.0
+  csv: ^5.0.2
+  shared_preferences: ^2.2.2
+  
+  # Networking
+  http: ^1.1.0
+  
+  # Permissions
+  permission_handler: ^11.1.0
+  
+  # Utilities
+  intl: ^0.18.1
+  uuid: ^4.2.1
+  path: ^1.8.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/haarcascade_frontalface_default.xml
+
